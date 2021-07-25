@@ -1,0 +1,9 @@
+.DS_Store
+.env
+.env.production
+build/
+node_modules/
+package.json
+public/
+src/
+yarn.lock
