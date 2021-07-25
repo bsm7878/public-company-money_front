@@ -1,0 +1,42 @@
+@import '../../../style/all.scss';
+
+.replies_write{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    
+    div:last-child{
+        text-align: right;
+    }
+}
+
+.delete-button{
+    margin-top: 5px;
+}
+
+.modal-hr{
+    border-top: 1px solid #f0f0f0;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.ant-modal-body{
+    padding-bottom: 1px;
+}
+.post-button{
+    text-align: right;
+}
+.ant-modal-footer{
+    display: none;
+}
+
+.table-colum{
+    text-align: center;
+}
+
+.ant-list-split{
+    max-height: 500px;
+    overflow-y: auto;
+    @include mobile {
+        max-height: 400px;
+    }
+}

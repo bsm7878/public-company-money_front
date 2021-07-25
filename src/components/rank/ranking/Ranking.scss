@@ -1,0 +1,75 @@
+@import '../../../style/all.scss';
+
+.card_section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include mobile {
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .title_logo{
+        float: left;
+        padding-top: 2px;
+        margin-right: 5px;
+    }
+    .title_content{
+        float: left;
+    }
+    .title_content::after { 
+        clear:both; 
+    }
+
+}
+
+
+
+.choice{
+    text-align: center;
+    .ant-badge-not-a-wrapper{
+        margin-right: 60px;
+        cursor: pointer;
+        @include mobile {
+            margin-right: 23px;
+        }
+    }
+    .ant-badge-not-a-wrapper:last-child{
+        margin-right: 0px;
+    }
+}
+
+.ranking{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    @include mobile {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .rank_wrapper{
+        span:first-child{
+            font-size: 90px;
+            color: #1890ff;
+            font-weight: bold;
+        }
+        span:last-child{
+            font-size: 15px;
+        }
+    }
+}
+
+.money_summary{
+    text-align: center;
+    th{
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.ant-descriptions-item-content{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    .company_section{
+        font-size: 8px;
+        color: #adaeb2;
+    }
+}

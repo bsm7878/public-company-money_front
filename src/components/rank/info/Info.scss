@@ -1,0 +1,46 @@
+@import '../../../style/all.scss';
+
+
+.info_wrapper{
+    background-color: white;
+    padding-top:100px;
+    padding-bottom:30px;
+}
+
+.ant-descriptions-title{
+    font-size: 30px;
+}
+
+.ant-avatar-square{
+    margin-bottom: 5px;
+}
+
+@include mobile {
+  .info_wrapper {
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+.ant-collapse{
+    margin-top: -1px;
+    border: 1px solid #f0f0f0;
+}
+
+.ant-collapse-item{
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.source{
+  text-align: right;
+  margin-top: 5px;
+  color: #c6c6c6;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.ant-card-body{
+  @include mobile {
+    padding: 15px;
+  }
+}
