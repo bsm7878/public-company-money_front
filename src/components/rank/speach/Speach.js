@@ -13,8 +13,9 @@ const Speach = ({uniq_num}) => {
     const { TextArea } = Input;
 
     const commentUrl = `/api/comment/${uniq_num}`;
-
+    const idUrl = `/api/first_money/${uniq_num}`;
     const [comment, setComment] = useState([])
+    const [companyId, setCompanyId] = useState();
     useEffect(() => {
       axiosInstance.get(commentUrl)
         .then(response => {
@@ -24,6 +25,16 @@ const Speach = ({uniq_num}) => {
         .catch(error => {
           // console.log(error)
         })
+
+      axiosInstance.get(idUrl)
+        .then(response => {
+          const {data} = response;
+          setCompanyId(data.company.id);
+        })
+        .catch(error => {
+          // console.log(error)
+        })
+
     }, [])
 
 
@@ -54,9 +65,6 @@ const Speach = ({uniq_num}) => {
             ])
         })
         .catch(error => {
-          console.log("error", error);
-          console.log("error", error.response);
-
           notification.open({
             message: '작성이 완료되지 않았습니다 :(',
             icon: <SmileOutlined style={{color: '#108ee9'}}/>
@@ -137,7 +145,7 @@ const Speach = ({uniq_num}) => {
                     <Form.Item
                         name="company"
                         hidden={true}
-                        initialValue={uniq_num}
+                        initialValue={companyId}
                       >
                         <Input/>
                       </Form.Item>
