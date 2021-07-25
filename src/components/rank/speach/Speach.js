@@ -54,6 +54,9 @@ const Speach = ({uniq_num}) => {
             ])
         })
         .catch(error => {
+          console.log("error", error);
+          console.log("error", error.data);
+          
           notification.open({
             message: '작성이 완료되지 않았습니다 :(',
             icon: <SmileOutlined style={{color: '#108ee9'}}/>
