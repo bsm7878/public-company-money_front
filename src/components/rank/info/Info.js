@@ -60,9 +60,7 @@ const Info = ({uniq_num}) => {
     return (
         <Row className="info_wrapper">
             <Col xs={{span: 24}} sm={{ span: 14, offset: 5 }}>
-                <a href = "https://www.naver.com" target="_blank">
-                    <Image width={200} src={img} alt={name} preview={false}/>
-                </a>
+                <Image width={200} src={img} alt={name} preview={false}/>
                 <Descriptions  size='small' bordered>
                     <Descriptions.Item label="초봉" span={2}>{moneyToUnit(firstTotal)} 천원</Descriptions.Item>
                     <Descriptions.Item label="평균연봉" span={2}>{moneyToUnit(aveTotal)} 천원</Descriptions.Item>
