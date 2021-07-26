@@ -49,9 +49,12 @@ const Speach = ({uniq_num}) => {
     const onFinish = (values) => {
       const {company, username, password, content} = values;
       const data = {company, username, password, content}
-      
-      axiosInstance.post("/api/comment/", data )
+      const headers = {
+        "contentType": "application/json"
+      }
+      axiosInstance.post("/api/comment/", data, headers)
         .then(response => {
+           console.log("???", response)
             notification.open({
               message: '작성 완료',
               icon: <SmileOutlined style={{color: '#108ee9'}}/>
@@ -65,6 +68,8 @@ const Speach = ({uniq_num}) => {
             ])
         })
         .catch(error => {
+          console.log("에러임", error)
+          console.log("에러임2", error.response.data)
           notification.open({
             message: '작성이 완료되지 않았습니다 :(',
             icon: <SmileOutlined style={{color: '#108ee9'}}/>
