@@ -29,7 +29,7 @@ const Main = () => {
         <Row className='title-section'>
             <Col span={24}>
                 <h1>
-                    알리오 불편해서 만듬
+                    알리오 불편해서 만듦
                     <br/>
                     공기업, 연봉 비교 끝판왕!
                 </h1>    
