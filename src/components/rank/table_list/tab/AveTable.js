@@ -68,7 +68,7 @@ const AveTable = ({uniq_num}) => {
 
               if(!locationData){
                 setAllMoney();
-                axiosInstance.get(`/api/first_money/${uniq_num}/location`)
+                axiosInstance.get(`/api/ave_money/${uniq_num}/location`)
                     .then(response => {
                         const {data} = response;
                         setLocationData(data);
@@ -90,7 +90,7 @@ const AveTable = ({uniq_num}) => {
 
               if(!authorityData){
                 setAllMoney();
-                axiosInstance.get(`/api/first_money/${uniq_num}/authority`)
+                axiosInstance.get(`/api/ave_money/${uniq_num}/authority`)
                     .then(response => {
                         const {data} = response;
                         setAuthorityData(data);
@@ -113,7 +113,7 @@ const AveTable = ({uniq_num}) => {
 
               if(!typeData){
                 setAllMoney();
-                axiosInstance.get(`/api/first_money/${uniq_num}/type`)
+                axiosInstance.get(`/api/ave_money/${uniq_num}/type`)
                 .then(response => {
                     const {data} = response;
                     setTypeData(data);
