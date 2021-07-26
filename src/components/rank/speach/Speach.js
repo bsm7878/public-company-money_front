@@ -107,6 +107,7 @@ const Speach = ({uniq_num}) => {
         })
     }
 
+    const today = new Date();
     return (
         <Row className="card_section">
             <Col xs={{span: 24}} sm={{ span: 14, offset: 5 }}>
@@ -213,7 +214,9 @@ const Speach = ({uniq_num}) => {
                         avatar= 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
                         content={comment.content}
                         datetime={
-                          moment(comment.created_at.split('.')[0],  'YYYY.MM.DD.HH.mm.ss ').fromNow()
+                          comment.created_at?
+                          moment(comment.created_at.split('.')[0],  'YYYY.MM.DD.HH.mm.ss ').fromNow() :
+                          moment(moment().format().split('.')[0],  'YYYY.MM.DD.HH.mm.ss ').fromNow()
                         }
                       />
 
