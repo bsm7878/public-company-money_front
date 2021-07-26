@@ -3,8 +3,11 @@
 
 .info_wrapper{
     background-color: white;
-    padding-top:100px;
+    padding-top:65px;
     padding-bottom:30px;
+    @include mobile {
+      padding-top:25px;
+    }
 }
 
 .ant-descriptions-title{
