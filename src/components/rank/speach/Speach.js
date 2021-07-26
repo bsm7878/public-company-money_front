@@ -107,7 +107,6 @@ const Speach = ({uniq_num}) => {
         })
     }
 
-    const today = new Date();
     return (
         <Row className="card_section">
             <Col xs={{span: 24}} sm={{ span: 14, offset: 5 }}>
