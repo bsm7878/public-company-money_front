@@ -140,7 +140,7 @@ const Speach = ({uniq_num}) => {
                   okText={'게시'}
                   cancelText={'취소'}
                 >
-                  <Form onFinish={onFinish}>
+                  <Form onFinish={onFinish}  data-netlify="true">
                   <div>
                   <Row>
                     <Col xs={{span: 24}} sm={{ span: 11 }}>    
