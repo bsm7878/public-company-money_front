@@ -126,11 +126,11 @@ const FirstRank = ({uniq_num}) => {
                     </Descriptions.Item>
                     <Descriptions.Item label="최저" span={2}>
                         <div className="money_section">{rankInfo.bottom && moneyToUnit(rankInfo.bottom.money)}</div> 
-                        <div className="company_section">({rankInfo.bottom && rankInfo.bottom.name})</div>
+                        <div className="company_section">{rankInfo.bottom && rankInfo.bottom.name}</div>
                     </Descriptions.Item>
                     <Descriptions.Item label="중위값" span={2}>
                         <div className="money_section">{rankInfo.center && moneyToUnit(rankInfo.center.money)}</div>
-                        <div className="company_section">({rankInfo.center && rankInfo.center.name})</div>
+                        <div className="company_section">{rankInfo.center && rankInfo.center.name}</div>
                     </Descriptions.Item>
                     <Descriptions.Item label="평균" span={2}>
                         <div className="money_section">{rankInfo.middle && moneyToUnit(rankInfo.middle.money) }</div>
