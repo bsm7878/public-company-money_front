@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Layout, Image } from 'antd';
+import { Row, Col, Layout } from 'antd';
 import Logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 import './AppLayOut.scss';
